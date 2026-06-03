@@ -95,7 +95,10 @@ function render() {
   }
 
   totalEl.innerText = finalTotal + " جنيه";
-  document.getElementById("cartCount").innerText = cart.reduce((s, i) => s + i.qty, 0);
+  const totalQty = cart.reduce((s, i) => s + i.qty, 0);
+  document.getElementById("cartCount").innerText = totalQty;
+  const headerCount = document.getElementById("headerCartCount");
+  if (headerCount) headerCount.innerText = totalQty;
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
