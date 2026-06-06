@@ -199,7 +199,7 @@ function send() {
 
   msg += "💰 *الإجمالي: " + finalTotal + " جنيه*";
 
-  window.open("https://wa.me/201223136302?text=" + encodeURIComponent(msg));
+  window.open("https://wa.me/201067968244?text=" + encodeURIComponent(msg));
 
   // Reset
   cart         = [];
